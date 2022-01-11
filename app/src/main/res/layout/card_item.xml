@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id list"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id list"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_dosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id list"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_jumlah_suntikan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id list"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_jarak_suntikan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id list"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_batas_umur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id list"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_jumlah_vaksin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id list"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/tv_nama_vaksin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="20dp"
+                android:text="nama vaksin"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="20dp"
+                android:text="Detail"
+                android:textStyle="italic"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

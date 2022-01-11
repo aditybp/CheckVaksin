@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="WELCOME TO"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="GET VACCINATE APP"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="148dp"
+        android:layout_height="138dp"
+        android:layout_gravity="center"
+        android:src="@drawable/getvaccinate" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temukan Lokasi Vaksin Terdekat dari tempatmu"
+        android:textAlignment="center"
+        android:paddingBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_pindahmenuutama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/BiruMuda"
+        android:onClick="btn_pindahmenuutama"
+        android:text="Tap Here"
+        android:textAlignment="center" />
+</LinearLayout>

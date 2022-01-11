@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LokasiVaksin"
+    android:orientation="vertical"
+    android:layout_margin="6dp">
+
+    <TextView
+        android:id="@+id/tv_nama_lokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lokasi Vaksin"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_latitudelokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lokasi Vaksin"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_longitudelokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lokasi Vaksin"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat : "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_alamatlokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="alamat lokasi"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Telepon : "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_notelepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="disini no telepon"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_mapslokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Navigasi Lokasi"
+        android:onClick="btn_mapslokasi"
+        android:backgroundTint="@color/Hijau"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_data_detail_lokasi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/card_item"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
