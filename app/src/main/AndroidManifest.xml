@@ -18,7 +18,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CheckVaksin"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity.TentangAplikasi"></activity>
+        <activity android:name=".Activity.InputDataLokasiVaksin"></activity>
+        <activity android:name=".Activity.InputJenisVaksin" />
+        <activity android:name=".Activity.AdminMenuUtama" />
+        <activity android:name=".Activity.TentangAplikasi" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

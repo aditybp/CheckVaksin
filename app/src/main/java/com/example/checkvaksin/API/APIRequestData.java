@@ -34,4 +34,27 @@ public interface APIRequestData {
     Call<ResponseModelLokasi> ardGetLokasi(
             @Field("id") int id
     );
+
+    @FormUrlEncoded
+    @POST("createjenisvaksin.php")
+    Call<ResponseModel> ardcreatejenisvaksin(
+            @Field("nama_vaksin") String nama_vaksin,
+            @Field("keterangan") String keterangan,
+            @Field("dosis") String dosis,
+            @Field("jumlah_suntikan") String jumlah_suntikan,
+            @Field("jarak_suntikan") String jarak_suntikan,
+            @Field("batas_umur") String batas_umur,
+            @Field("jumlah_vaksin") String jumlah_vaksin,
+            @Field("gambar") String gambar
+    );
+
+    @FormUrlEncoded
+    @POST("createdatalokasi.php")
+    Call<ResponseModel> ardcreatedatalokasi(
+        @Field("nama_tempat") String nama_tempat,
+        @Field("latitude") String latitude,
+        @Field("longitude") String longitude,
+        @Field("alamat") String alamat,
+        @Field("telepon") String telepon
+    );
 }

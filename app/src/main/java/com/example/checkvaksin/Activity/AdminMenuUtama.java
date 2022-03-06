@@ -8,21 +8,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.checkvaksin.R;
 
-public class MainActivity extends AppCompatActivity {
+public class AdminMenuUtama extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_admin_menu_utama);
     }
 
-    public void btn_pindahmenuutama(View view) {
-        Intent intent = new Intent(MainActivity.this,MenuUtamaActivity.class);
+    public void btn_inputjenisvaksin(View view) {
+        Intent intent = new Intent(AdminMenuUtama.this,InputJenisVaksin.class);
         startActivity(intent);
     }
 
-    public void btn_pindahadmin(View view) {
-        Intent intent = new Intent(MainActivity.this,AdminMenuUtama.class);
+    public void btn_inputdatalokasivaksin(View view) {
+        Intent intent = new Intent(AdminMenuUtama.this,InputDataLokasiVaksin.class);
         startActivity(intent);
     }
 }
